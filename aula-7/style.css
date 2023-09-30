@@ -8,21 +8,52 @@ font-family: 'Poppins', sans-serif;
 font-size: 25px;
 }
 
+html{
+font-size: 62.5%;
+scroll-behavior: smooth;
+}
+
 body{
 background-color: rgb(243, 197, 197);
 }
 .golden-intro{
-height: 350px;
-position: relative;
-right: 100px;
-top: -20px;
+height: 35rem;
+width: 35rem;
 }
 .intro-conteudo{
 display: flex;
-position: relative;
-left: 200px;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
 }
-.intro-conteudo div {
+
+.main-content{
+max-width: 100rem;
+margin: 0 , auto;
+padding: 8rem 3rem;
+}
+
+.intro-content{
+width: 70%;
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+padding: 0 3rem;
+}
+
+.intro-content h1{
+text-align: center;
+font-size: 5rem;
+padding: 2rem;
+}
+
+.intro-content p{
+text-align: justify;
+
+}
+
+/* .intro-conteudo div {
 width: 700px;
 display: flex;
 align-items: center;
@@ -33,28 +64,28 @@ align-items: center;
 }
 .intro-conteudo div p {
 margin-top: 30px;
-}
+} */
 .principal-conteudo{
 display: flex;
-background-color: aliceblue;
+background-color: #f0f8ff;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
+}
+.curiosidades-conteudo{
+max-width: 100rem;
+margin: 0 , auto;
+padding: 8rem 3rem;
 }
 
-.princiap-conteudo{
-display: flex;
-position: relative;
-left: 200px;
-}
-.principal-conteudo div {
-width: 500px;
-display: flex;
-align-items: center;
-flex-direction: column;
-padding: 40px;
-margin-top: 30px;
-align-items: center;
-}
 .principal-conteudo div p{
-font-size: 15px;
+font-size: 13px;
 padding: 20px;
-
+}
+.curiosidades-conteudo{
+display: flex;
+}
+.img ul li{
+display: inline-block;
 }

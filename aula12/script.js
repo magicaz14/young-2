@@ -27,12 +27,26 @@ function contagem(){
     horas_el.innerHTML = horas
     minutos_el.innerHTML = minutos
     segundos_el.innerHTML = segundos
+    
+    // DEIXAR O NUMERO COM DOIS DIGITOS 
+    let zero = 0
+
+    if (segundos<10){
+        segundos_el.innerHTML = zero.toString() + segundos.toString()
+    }
+
+    if (minutos<10){
+      minutos_el.innerHTML = zero.toString() + minutos.toString() 
+    }
+    if (horas<10){
+        horas_el.innerHTML = zero.toString() + horas.toString()
+    }
+    if (dias<10){
+        dias_el.innerHTML = zero.toString() + dias.toString()
+    }
 }
 
 contagem()
 
-// COMO ATULIZAR A PAGINA SEGUNDO A SEGUNDO
-
-// DEIXAR O NUMERO COM DOIS DIGITOS 
 
 // TORNAR DINÂMINCO A DATA DO ALVO

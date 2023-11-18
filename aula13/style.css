@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+html{
+font-size: 62.5%;
+}
+
+body{
+/* tamanho */
+width: 100vw;
+height: 100vh;
+/* fundo */
+background-image: linear-gradient(90deg,rgb(43, 0, 255),rgb(189, 20, 227));
+/* centralizar */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.conteiner-quiz{
+background-color: antiquewhite;
+border-radius: 15px;
+height: 65%;
+width: 35%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+box-shadow: 0.5rem 0.5rem 1rem rgb(0, 0, 0);
+}
+
+.conteudo-quiz{
+padding: 3rem;
+height: 80%;
+display: flex;
+flex-direction: column
+;
+justify-content: space-around;
+
+}
+
+.conteudo-quiz h1{
+text-align: center;
+font-size: 4rem;
+}
+
+.conteudo-quiz ul, ul li{
+list-style: none;
+font-size: 2rem;
+margin: 2rem 0;
+
+}
+
+.conteudo-quiz ul li label, ul li input{
+cursor: pointer;
+}
+
+.conteiner-quiz button{
+cursor: pointer;
+width: 100%;
+height: 20%;
+font-size: 2rem;
+
+border: none;
+border-radius: 0 0 1.5rem 1.5rem;
+
+background-color: black;
+color: rgb(255, 255, 255);
+}
+
+button:hover{
+background-color: rgba(46, 46, 46, 0.552);
+}
+
+button:active{
+background-color: red;
+}

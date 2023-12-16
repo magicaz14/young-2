@@ -11,10 +11,18 @@ const buscar_cep = async (cep) =>{
     if (resposta.status === 400){
         window.alert('CEP invalido');
         CEP.value = ''
+        estado.innerHTML = "Estado:"
+        cidade.innerHTML = 'Cidade:'
+        bairro.innerHTML = 'Bairro:'
+        rua.innerHTML = 'Rua:'
     }
     else if (resposta.status === 404){
         window.alert('CEP não encontrado');
         CEP.value = ''
+        estado.innerHTML = "Estado:"
+        cidade.innerHTML = 'Cidade:'
+        bairro.innerHTML = 'Bairro:'
+        rua.innerHTML = 'Rua:'
     } else if (resposta.status === 200){
         const info = resposta.json()
         return info
